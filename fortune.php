@@ -7,7 +7,7 @@ if(isset($_GET['all'])) {
     // Removes '..'
     array_shift($files);
     
-    $file_name = 'fortunes/' . $files[mt_rand(0, count($files))];
+    $file_name = 'fortunes/' . $files[mt_rand(0, count($files)-1)];
 } else if(isset($_GET['url'])) {
     $file_name = preg_match('#^https?://.*#i', $_GET['url']) ? $_GET['url'] : 'http://' . $_GET['url'];
 } else if(isset($_GET['file']) && file_exists('fortunes/' . $_GET['file'])) {
@@ -41,6 +41,6 @@ foreach($file as $index => $line) {
 }
 
 
-$fortune = $fortunes[mt_rand(0, count($fortunes))];
+$fortune = $fortunes[mt_rand(0, count($fortunes)-1)];
 
-echo isset($_GET['html']) ? nl2br($fortune) : $fortune;
+echo isset($_GET['html']) ? '<pre>' . $fortune . '</pre>' : $fortune;
