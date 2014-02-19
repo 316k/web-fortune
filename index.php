@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    
+    <title>Online fortune generator</title>
     </head>
     <body>
         <header>
@@ -46,4 +46,6 @@
                 <li><a href="fortune.php?html&amp;file=<?php echo $file ?>"><?php echo $file ?></a> <small><a href="fortune.php?file=<?php echo $file ?>">[raw text]</a></small></li>
             <?php endforeach; ?>
         </ul>
+        <h2>Source code and license</h2>
+        <p>This program is licensed under the <a href="LICENSE">Apache v2 License</a>. See https://github.com/316k/web-fortune for source code.</p>
     </body>
