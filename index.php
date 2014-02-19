@@ -34,7 +34,7 @@
             <?php 
             $fortune_files = array();
             foreach(new DirectoryIterator('fortunes') as $file) {
-                if(!$file->isDot()) {
+                if(!$file->isDot() && $file->isFile()) {
                     $fortune_files[] = (string) $file;
                     echo '';
                 }
