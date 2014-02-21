@@ -47,6 +47,6 @@
             <?php endforeach; ?>
         </ul>
         <h2>Source code and license</h2>
-        <p>This program is licensed under the <a href="LICENSE">Apache v2 License</a>. See https://github.com/316k/web-fortune for source code.</p>
+        <p>This program is licensed under the <a href="LICENSE">Apache v2 License</a>. See <a href="https://github.com/316k/web-fortune">https://github.com/316k/web-fortune</a> for source code.</p>
     </body>
 </html>
