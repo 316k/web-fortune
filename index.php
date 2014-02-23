@@ -25,9 +25,7 @@
         <p>It's pretty simple.
         <br />
         Just go click on one of the many centers of interest below (e.g. <a href="http://wasting-ti.me/fortune/fortune.php?html&amp;computers">computers</a>)</p><p>For access from a terminal : </p>
-        <code>
-            curl http://wasting-ti.me/fortune/fortune.php?computers
-        </code>
+        <code>curl http://wasting-ti.me/fortune/fortune.php?file=computers</code>
         <h2>Available fortune files</h2>
         <ul>
             <li><a href="fortune.php?html&amp;all"><b>All</b></a> <small><a href="fortune.php?all">[raw text]</a></small></li>
