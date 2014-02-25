@@ -1,0 +1,3 @@
+SetEnv session.use_cookies='0'
+Header unset Cookie
+Header unset Set-Cookie
