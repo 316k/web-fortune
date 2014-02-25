@@ -34,7 +34,7 @@
                 
                 foreach($fortune_files as $index => $file): ?>
                     <li><a href="fortune.php?html&amp;file=<?php echo $file ?>"><?php echo $file ?></a> <small><a href="fortune.php?file=<?php echo $file ?>">[raw text]</a></small></li>
-                    <?php if((($index + 1) % (count($fortune_files)/5) == 0)): ?>
+                    <?php if((($index + 1) % (count($fortune_files)/5) == 0)): // Splits fortunes in rows ?>
                          </ul>
                          <ul style="float: left; margin-top: 40px;">
                     <?php endif; ?>

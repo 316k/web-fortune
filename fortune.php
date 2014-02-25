@@ -43,4 +43,4 @@ foreach($file as $index => $line) {
 
 $fortune = $fortunes[mt_rand(0, count($fortunes)-1)];
 
-echo isset($_GET['html']) ? '<pre>' . $fortune . '</pre>' : $fortune;
+echo isset($_GET['html']) ? '<pre>' . $fortune . '</pre><br /><a href="">Another !</a>' : $fortune;
