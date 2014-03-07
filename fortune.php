@@ -1,21 +1,15 @@
 <?php
 
-if(isset($_GET['all'])) {
-    $files = scandir('fortunes');
+if(isset($_GET['file']) && file_exists('fortunes/' . $_GET['file'])) {
+    $file_name = __DIR__ . '/fortunes/' . $_GET['file'];
+} else {
+    $files = scandir(__DIR__ . '/fortunes');
     // Removes '.'
     array_shift($files);
     // Removes '..'
     array_shift($files);
     
-    $file_name = 'fortunes/' . $files[mt_rand(0, count($files)-1)];
-} else if(isset($_GET['url'])) {
-    $file_name = preg_match('#^https?://.*#i', $_GET['url']) ? $_GET['url'] : 'http://' . $_GET['url'];
-} else if(isset($_GET['file']) && file_exists('fortunes/' . $_GET['file'])) {
-    $file_name = 'fortunes/' . $_GET['file'];
-} else {
-    header("HTTP/1.0 404 Not Found");
-    header("Location: ./");
-    exit();
+    $file_name = __DIR__ . '/fortunes/' . $files[mt_rand(0, count($files)-1)];
 }
 
 // Gets all fortune lines as an array
