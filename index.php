@@ -60,7 +60,7 @@
             <h2>How to use Web-fortune ?</h2>
             <p>It's pretty simple.
             <br />
-            Just go click on one of the many centers of interest below (e.g. <a href="http://wasting-ti.me/fortune/fortune.php?html&amp;computers">computers</a>)</p><p>For access from a terminal : </p>
+            Just go click on one of the many centers of interest above (e.g. <a href="http://wasting-ti.me/fortune/fortune.php?html&amp;computers">computers</a>)</p><p>For access from a terminal : </p>
             <code>curl http://wasting-ti.me/fortune/fortune.php?file=computers</code>
         </section>
         <section>
